@@ -7,7 +7,7 @@ trackService.search = function(q) {
 
   return platziMusicService
     .get("/search", {
-      params: { q, type }
+      params: { q: q, type: type }
     })
     .then(res => res.data);
 };
