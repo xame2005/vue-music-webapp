@@ -11,5 +11,15 @@
         .hero-body
         .container.has-text-centered
             h1.title Vue Music
-            h2.subtitle Canciones que están Vue-nísimas  
+            h2.subtitle Canciones que están Vue-nísimas
+            v-player
 </template>
+
+<script>
+import VPlayer from "@/components/Player.vue";
+export default {
+  components: {
+    VPlayer
+  }
+};
+</script>
