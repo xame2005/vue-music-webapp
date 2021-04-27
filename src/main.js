@@ -9,7 +9,7 @@ import EventBus from "@/plugins/event-bus";
 Vue.use(EventBus);
 Vue.use(VueRouter);
 
-const router = new VueRouter({ routes });
+const router = new VueRouter({ routes, mode: "history" });
 
 new Vue({
   el: "#app",

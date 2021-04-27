@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import trackService from "@/services/trae.js";
+import trackService from "@/services/track.js";
 import VTrack from "@/components/Track.vue";
 import VLoader from "@/components/shared/Loader.vue";
 import VNotification from "@/components/shared/Notification.vue";
