@@ -12,7 +12,7 @@
       .container.results
         .columns.is-multiline
           .column.is-one-quarter(v-for="t in tracks")
-            v-track(:class="{'is-active': t.id==selectedTrack}", :track="t", @select="setSelectedTrack")
+            v-track(v-blur="t.preview_url" :class="{'is-active': t.id==selectedTrack}", :track="t", @select="setSelectedTrack")
       .container
         p
         small {{searchMessage}}
