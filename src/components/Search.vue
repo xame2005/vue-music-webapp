@@ -1,8 +1,10 @@
 <template lang="pug">
   main
-    v-notification(v-show="showNotification")
-      p(slot="body") No se encontraron resultados
-    v-loader(v-show="isLoading")
+    transition(name="move")
+      v-notification(v-show="showNotification")
+        p(slot="body") No se encontraron resultados
+    transition(name="move")
+      v-loader(v-show="isLoading")
     section.section(v-show="!isLoading")
       nav.nav
         .container

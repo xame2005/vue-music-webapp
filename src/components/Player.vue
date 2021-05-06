@@ -12,17 +12,11 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      track: {}
-    };
-  },
+import { mapState } from "vuex";
 
-  created() {
-    this.$bus.$on("set-track", track => {
-      this.track = track;
-    });
+export default {
+  computed: {
+    ...mapState(["track"])
   }
 };
 </script>

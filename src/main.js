@@ -8,6 +8,8 @@ import routes from "@/routes";
 
 import EventBus from "@/plugins/event-bus";
 
+import store from "@/store";
+
 Vue.use(EventBus);
 Vue.use(VueRouter);
 Vue.use(msToMm);
@@ -18,5 +20,6 @@ const router = new VueRouter({ routes, mode: "history" });
 new Vue({
   el: "#app",
   render: h => h(App),
-  router
+  router,
+  store
 });
